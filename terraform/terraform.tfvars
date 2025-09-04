@@ -1,8 +1,8 @@
 # AWS Configuration
-aws_region = "us-east-1"  # Change to your preferred region
+aws_region = "eu-west-1"  # Change to your preferred region
 
 # Project Configuration
-project_name = "portfolio-dashboard"
+project_name = "portfolio-dashboard-v2"
 environment  = "production"
 
 # Network Configuration
