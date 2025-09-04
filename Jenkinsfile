@@ -138,7 +138,7 @@ print('All basic tests passed!')
                         dir('terraform') {
                             sh '''
                                 echo "=================Terraform Plan=================="
-                                terraform plan -detailed-exitcode
+                                terraform plan 
                                 echo "Terraform plan completed"
                             '''
                         }
