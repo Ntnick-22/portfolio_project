@@ -321,7 +321,7 @@ resource "aws_launch_template" "portfolio_lt" {
     name = aws_iam_instance_profile.ec2_profile.name
   }
 
-  user_data = base64encode(templatefile("${path.module}/user_data.sh", {
+  user_data = base64encode(templatefile("${path.module}/user_data.tpl", {
     s3_bucket    = aws_s3_bucket.portfolio_assets.bucket
     dynamodb_table = aws_dynamodb_table.visitor_counter.name
     aws_region   = var.aws_region
