@@ -31,7 +31,7 @@ pipeline {
                     echo "📥 Cloning portfolio repository..."
                     // Update with your actual GitHub repository URL
                     git branch: 'main',
-                        url: 'https://github.com/yourusername/portfolio-project.git'
+                        url: 'https://github.com/Ntnick-22/portfolio_project.git'
                     
                     sh "ls -lart"
                     echo "✅ Repository cloned successfully"
