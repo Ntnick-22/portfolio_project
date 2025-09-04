@@ -15,16 +15,7 @@ pipeline {
         TF_VAR_project_name = "portfolio-dashboard-${params.ENVIRONMENT}"
     }
     
-    stages {
-        stage('Clean Workspace') {
-            steps {
-                script {
-                    echo "Cleaning workspace..."
-                    deleteDir()
-                }
-            }
-        }
-        
+    stages {        
         stage('Validate Repository') {
             steps {
                 script {
